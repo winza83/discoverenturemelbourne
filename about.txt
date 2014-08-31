@@ -1,0 +1,4 @@
+This web application aims to take different datasets from PTV's transport information, foursquare and data from events Victoria and transform it to meaningful information.
+Hopefully I will be able to use this app to discover new and interesting places along train lines. 
+
+This uses python, html and javascript and the map is based on Google Maps API v3.
