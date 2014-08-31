@@ -1,0 +1,1956 @@
+{
+    "minLong": 144.661118,
+    "totalLocations": 216,
+    "locations": [
+        {
+            "distance": 0.0,
+            "location_name": "Mentone ",
+            "lon": 145.06517,
+            "suburb": "Mentone",
+            "transport_type": "train",
+            "stop_id": 1122,
+            "lat": -37.9818649
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Cheltenham ",
+            "lon": 145.05455,
+            "suburb": "Cheltenham",
+            "transport_type": "train",
+            "stop_id": 1039,
+            "lat": -37.9666519
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Sandringham ",
+            "lon": 145.004562,
+            "suburb": "Sandringham",
+            "transport_type": "train",
+            "stop_id": 1173,
+            "lat": -37.95033
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Highett ",
+            "lon": 145.04187,
+            "suburb": "Highett",
+            "transport_type": "train",
+            "stop_id": 1095,
+            "lat": -37.9484253
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Hampton ",
+            "lon": 145.001465,
+            "suburb": "Hampton",
+            "transport_type": "train",
+            "stop_id": 1086,
+            "lat": -37.937973
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Moorabbin ",
+            "lon": 145.036743,
+            "suburb": "Moorabbin",
+            "transport_type": "train",
+            "stop_id": 1132,
+            "lat": -37.93435
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Brighton Beach ",
+            "lon": 144.989151,
+            "suburb": "Brighton",
+            "transport_type": "train",
+            "stop_id": 1027,
+            "lat": -37.9264832
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Patterson ",
+            "lon": 145.035461,
+            "suburb": "Bentleigh",
+            "transport_type": "train",
+            "stop_id": 1157,
+            "lat": -37.9251442
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Bentleigh ",
+            "lon": 145.036987,
+            "suburb": "Bentleigh",
+            "transport_type": "train",
+            "stop_id": 1020,
+            "lat": -37.9174271
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Middle Brighton ",
+            "lon": 144.996292,
+            "suburb": "Brighton",
+            "transport_type": "train",
+            "stop_id": 1126,
+            "lat": -37.9151344
+        },
+        {
+            "distance": 0.0,
+            "location_name": "McKinnon ",
+            "lon": 145.0383,
+            "suburb": "Mckinnon",
+            "transport_type": "train",
+            "stop_id": 1119,
+            "lat": -37.910305
+        },
+        {
+            "distance": 0.0,
+            "location_name": "North Brighton ",
+            "lon": 145.002609,
+            "suburb": "Brighton",
+            "transport_type": "train",
+            "stop_id": 1143,
+            "lat": -37.9048843
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Ormond ",
+            "lon": 145.039612,
+            "suburb": "Ormond",
+            "transport_type": "train",
+            "stop_id": 1152,
+            "lat": -37.90321
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Werribee ",
+            "lon": 144.661118,
+            "suburb": "Werribee",
+            "transport_type": "train",
+            "stop_id": 1205,
+            "lat": -37.8993835
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Gardenvale ",
+            "lon": 145.004166,
+            "suburb": "Brighton",
+            "transport_type": "train",
+            "stop_id": 1074,
+            "lat": -37.8966942
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Murrumbeena ",
+            "lon": 145.067383,
+            "suburb": "Murrumbeena",
+            "transport_type": "train",
+            "stop_id": 1138,
+            "lat": -37.8901978
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Glenhuntly ",
+            "lon": 145.042221,
+            "suburb": "Glen Huntly",
+            "transport_type": "train",
+            "stop_id": 1081,
+            "lat": -37.8897171
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Carnegie ",
+            "lon": 145.058578,
+            "suburb": "Carnegie",
+            "transport_type": "train",
+            "stop_id": 1034,
+            "lat": -37.88624
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Elsternwick ",
+            "lon": 145.0009,
+            "suburb": "Elsternwick",
+            "transport_type": "train",
+            "stop_id": 1061,
+            "lat": -37.88475
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Hoppers Crossing ",
+            "lon": 144.700958,
+            "suburb": "Hoppers Crossing",
+            "transport_type": "train",
+            "stop_id": 1097,
+            "lat": -37.8832779
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Caulfield ",
+            "lon": 145.042526,
+            "suburb": "Caulfield East",
+            "transport_type": "train",
+            "stop_id": 1036,
+            "lat": -37.8774567
+        },
+        {
+            "distance": 0.0,
+            "location_name": "East Malvern ",
+            "lon": 145.0694,
+            "suburb": "Malvern East",
+            "transport_type": "train",
+            "stop_id": 1058,
+            "lat": -37.87693
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Ripponlea ",
+            "lon": 144.995239,
+            "suburb": "Ripponlea",
+            "transport_type": "train",
+            "stop_id": 1165,
+            "lat": -37.8759079
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Williams Landing ",
+            "lon": 144.747452,
+            "suburb": "Williams Landing",
+            "transport_type": "train",
+            "stop_id": 1225,
+            "lat": -37.86987
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Balaclava ",
+            "lon": 144.993515,
+            "suburb": "Balaclava",
+            "transport_type": "train",
+            "stop_id": 1013,
+            "lat": -37.8694878
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Darling ",
+            "lon": 145.062943,
+            "suburb": "Malvern East",
+            "transport_type": "train",
+            "stop_id": 1051,
+            "lat": -37.8689575
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Seaholme ",
+            "lon": 144.840958,
+            "suburb": "Seaholme",
+            "transport_type": "train",
+            "stop_id": 1175,
+            "lat": -37.8678436
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Williamstown ",
+            "lon": 144.905319,
+            "suburb": "Williamstown",
+            "transport_type": "train",
+            "stop_id": 1211,
+            "lat": -37.8677559
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Altona ",
+            "lon": 144.829651,
+            "suburb": "Altona",
+            "transport_type": "train",
+            "stop_id": 1005,
+            "lat": -37.86715
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Aircraft ",
+            "lon": 144.7608,
+            "suburb": "Laverton",
+            "transport_type": "train",
+            "stop_id": 1220,
+            "lat": -37.8666039
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Malvern ",
+            "lon": 145.0293,
+            "suburb": "Malvern",
+            "transport_type": "train",
+            "stop_id": 1118,
+            "lat": -37.86625
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Westona ",
+            "lon": 144.813492,
+            "suburb": "Altona",
+            "transport_type": "train",
+            "stop_id": 1210,
+            "lat": -37.8651657
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Williamstown Beach ",
+            "lon": 144.894485,
+            "suburb": "Williamstown",
+            "transport_type": "train",
+            "stop_id": 1212,
+            "lat": -37.8639832
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Laverton ",
+            "lon": 144.772614,
+            "suburb": "Laverton",
+            "transport_type": "train",
+            "stop_id": 1113,
+            "lat": -37.8636932
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Glen Iris ",
+            "lon": 145.058228,
+            "suburb": "Glen Iris",
+            "transport_type": "train",
+            "stop_id": 1077,
+            "lat": -37.8593063
+        },
+        {
+            "distance": 0.0,
+            "location_name": "North Williamstown ",
+            "lon": 144.889069,
+            "suburb": "Williamstown",
+            "transport_type": "train",
+            "stop_id": 1146,
+            "lat": -37.85733
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Armadale ",
+            "lon": 145.019333,
+            "suburb": "Armadale",
+            "transport_type": "train",
+            "stop_id": 1008,
+            "lat": -37.8564529
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Windsor ",
+            "lon": 144.992035,
+            "suburb": "Windsor",
+            "transport_type": "train",
+            "stop_id": 1214,
+            "lat": -37.8560524
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Gardiner ",
+            "lon": 145.051666,
+            "suburb": "Glen Iris",
+            "transport_type": "train",
+            "stop_id": 1075,
+            "lat": -37.8532829
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Toorak ",
+            "lon": 145.0139,
+            "suburb": "Armadale",
+            "transport_type": "train",
+            "stop_id": 1194,
+            "lat": -37.85077
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Prahran ",
+            "lon": 144.989853,
+            "suburb": "Prahran",
+            "transport_type": "train",
+            "stop_id": 1158,
+            "lat": -37.8495178
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Tooronga ",
+            "lon": 145.041733,
+            "suburb": "Malvern",
+            "transport_type": "train",
+            "stop_id": 1195,
+            "lat": -37.84937
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Hawksburn ",
+            "lon": 145.002136,
+            "suburb": "South Yarra",
+            "transport_type": "train",
+            "stop_id": 1089,
+            "lat": -37.844593
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Newport ",
+            "lon": 144.8836,
+            "suburb": "Newport",
+            "transport_type": "train",
+            "stop_id": 1141,
+            "lat": -37.8427124
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Kooyong ",
+            "lon": 145.033554,
+            "suburb": "Kooyong",
+            "transport_type": "train",
+            "stop_id": 1110,
+            "lat": -37.8399277
+        },
+        {
+            "distance": 0.0,
+            "location_name": "South Yarra ",
+            "lon": 144.99234,
+            "suburb": "South Yarra",
+            "transport_type": "train",
+            "stop_id": 1180,
+            "lat": -37.8384438
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Heyington ",
+            "lon": 145.022629,
+            "suburb": "Toorak",
+            "transport_type": "train",
+            "stop_id": 1094,
+            "lat": -37.83467
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Spotswood ",
+            "lon": 144.885941,
+            "suburb": "Spotswood",
+            "transport_type": "train",
+            "stop_id": 1182,
+            "lat": -37.8306351
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Burnley ",
+            "lon": 145.007553,
+            "suburb": "Burnley",
+            "transport_type": "train",
+            "stop_id": 1030,
+            "lat": -37.8275566
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Camberwell ",
+            "lon": 145.058685,
+            "suburb": "Camberwell",
+            "transport_type": "train",
+            "stop_id": 1032,
+            "lat": -37.8265648
+        },
+        {
+            "distance": 0.0,
+            "location_name": "East Richmond ",
+            "lon": 144.99707,
+            "suburb": "Richmond",
+            "transport_type": "train",
+            "stop_id": 1059,
+            "lat": -37.8264046
+        },
+        {
+            "distance": 0.0,
+            "location_name": "East Camberwell ",
+            "lon": 145.068192,
+            "suburb": "Camberwell",
+            "transport_type": "train",
+            "stop_id": 1057,
+            "lat": -37.8258934
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Richmond ",
+            "lon": 144.990158,
+            "suburb": "Richmond",
+            "transport_type": "train",
+            "stop_id": 1162,
+            "lat": -37.8240738
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Auburn ",
+            "lon": 145.045837,
+            "suburb": "Hawthorn East",
+            "transport_type": "train",
+            "stop_id": 1012,
+            "lat": -37.8224
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Hawthorn ",
+            "lon": 145.0229,
+            "suburb": "Hawthorn",
+            "transport_type": "train",
+            "stop_id": 1090,
+            "lat": -37.8218231
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Glenferrie ",
+            "lon": 145.036438,
+            "suburb": "Hawthorn",
+            "transport_type": "train",
+            "stop_id": 1080,
+            "lat": -37.8214645
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Southern Cross ",
+            "lon": 144.95253,
+            "suburb": "Melbourne City",
+            "transport_type": "train",
+            "stop_id": 1181,
+            "lat": -37.8183327
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Flinders Street ",
+            "lon": 144.966965,
+            "suburb": "Melbourne City",
+            "transport_type": "train",
+            "stop_id": 1071,
+            "lat": -37.81831
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Jolimont-MCG ",
+            "lon": 144.9841,
+            "suburb": "East Melbourne",
+            "transport_type": "train",
+            "stop_id": 1104,
+            "lat": -37.81653
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Yarraville ",
+            "lon": 144.889938,
+            "suburb": "Yarraville",
+            "transport_type": "train",
+            "stop_id": 1216,
+            "lat": -37.81585
+        },
+        {
+            "distance": 0.0,
+            "location_name": "West Richmond ",
+            "lon": 144.991425,
+            "suburb": "Richmond",
+            "transport_type": "train",
+            "stop_id": 1207,
+            "lat": -37.8149452
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Flagstaff ",
+            "lon": 144.955658,
+            "suburb": "Melbourne City",
+            "transport_type": "train",
+            "stop_id": 1068,
+            "lat": -37.8119774
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Parliament ",
+            "lon": 144.9729,
+            "suburb": "Melbourne City",
+            "transport_type": "train",
+            "stop_id": 1155,
+            "lat": -37.8110542
+        },
+        {
+            "distance": 0.0,
+            "location_name": "North Richmond ",
+            "lon": 144.9925,
+            "suburb": "Richmond",
+            "transport_type": "train",
+            "stop_id": 1145,
+            "lat": -37.8103943
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Melbourne Central ",
+            "lon": 144.9626,
+            "suburb": "Melbourne City",
+            "transport_type": "train",
+            "stop_id": 1120,
+            "lat": -37.8099365
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Seddon ",
+            "lon": 144.89566,
+            "suburb": "Seddon",
+            "transport_type": "train",
+            "stop_id": 1176,
+            "lat": -37.8090019
+        },
+        {
+            "distance": 0.0,
+            "location_name": "North Melbourne ",
+            "lon": 144.941513,
+            "suburb": "West Melbourne",
+            "transport_type": "train",
+            "stop_id": 1144,
+            "lat": -37.80631
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Collingwood ",
+            "lon": 144.993744,
+            "suburb": "Abbotsford",
+            "transport_type": "train",
+            "stop_id": 1043,
+            "lat": -37.8045235
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Middle Footscray ",
+            "lon": 144.891479,
+            "suburb": "Footscray",
+            "transport_type": "train",
+            "stop_id": 1127,
+            "lat": -37.8025
+        },
+        {
+            "distance": 0.0,
+            "location_name": "West Footscray ",
+            "lon": 144.88533,
+            "suburb": "West Footscray",
+            "transport_type": "train",
+            "stop_id": 1206,
+            "lat": -37.80181
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Footscray ",
+            "lon": 144.9032,
+            "suburb": "Footscray",
+            "transport_type": "train",
+            "stop_id": 1072,
+            "lat": -37.8010864
+        },
+        {
+            "distance": 0.0,
+            "location_name": "South Kensington ",
+            "lon": 144.925476,
+            "suburb": "Kensington",
+            "transport_type": "train",
+            "stop_id": 1179,
+            "lat": -37.7995338
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Tottenham ",
+            "lon": 144.862946,
+            "suburb": "West Footscray",
+            "transport_type": "train",
+            "stop_id": 1196,
+            "lat": -37.7992554
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Victoria Park ",
+            "lon": 144.994446,
+            "suburb": "Abbotsford",
+            "transport_type": "train",
+            "stop_id": 1201,
+            "lat": -37.7991562
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Macaulay ",
+            "lon": 144.936172,
+            "suburb": "North Melbourne",
+            "transport_type": "train",
+            "stop_id": 1116,
+            "lat": -37.7942619
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Kensington ",
+            "lon": 144.930527,
+            "suburb": "Kensington",
+            "transport_type": "train",
+            "stop_id": 1108,
+            "lat": -37.7937775
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Clifton Hill ",
+            "lon": 144.995422,
+            "suburb": "Clifton Hill",
+            "transport_type": "train",
+            "stop_id": 1041,
+            "lat": -37.7886543
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Flemington Bridge ",
+            "lon": 144.939316,
+            "suburb": "North Melbourne",
+            "transport_type": "train",
+            "stop_id": 1069,
+            "lat": -37.7881355
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Sunshine ",
+            "lon": 144.83197,
+            "suburb": "Sunshine",
+            "transport_type": "train",
+            "stop_id": 1218,
+            "lat": -37.7877426
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Newmarket ",
+            "lon": 144.928986,
+            "suburb": "Flemington",
+            "transport_type": "train",
+            "stop_id": 1140,
+            "lat": -37.7873268
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Rushall ",
+            "lon": 144.9924,
+            "suburb": "Fitzroy North",
+            "transport_type": "train",
+            "stop_id": 1170,
+            "lat": -37.78322
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Royal Park ",
+            "lon": 144.9523,
+            "suburb": "Parkville",
+            "transport_type": "train",
+            "stop_id": 1169,
+            "lat": -37.7811928
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Westgarth ",
+            "lon": 144.999237,
+            "suburb": "Northcote",
+            "transport_type": "train",
+            "stop_id": 1209,
+            "lat": -37.7806168
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Dennis ",
+            "lon": 145.00824,
+            "suburb": "Northcote",
+            "transport_type": "train",
+            "stop_id": 1053,
+            "lat": -37.7791824
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Fairfield ",
+            "lon": 145.0169,
+            "suburb": "Fairfield",
+            "transport_type": "train",
+            "stop_id": 1065,
+            "lat": -37.7791748
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Alphington ",
+            "lon": 145.03125,
+            "suburb": "Alphington",
+            "transport_type": "train",
+            "stop_id": 1004,
+            "lat": -37.7783966
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Merri ",
+            "lon": 144.992981,
+            "suburb": "Northcote",
+            "transport_type": "train",
+            "stop_id": 1125,
+            "lat": -37.7778435
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Albion ",
+            "lon": 144.8247,
+            "suburb": "Sunshine North",
+            "transport_type": "train",
+            "stop_id": 1003,
+            "lat": -37.7776566
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Ascot Vale ",
+            "lon": 144.921829,
+            "suburb": "Ascot Vale",
+            "transport_type": "train",
+            "stop_id": 1009,
+            "lat": -37.77531
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Jewell ",
+            "lon": 144.95871,
+            "suburb": "Brunswick",
+            "transport_type": "train",
+            "stop_id": 1103,
+            "lat": -37.7749825
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Darebin ",
+            "lon": 145.038483,
+            "suburb": "Ivanhoe",
+            "transport_type": "train",
+            "stop_id": 1050,
+            "lat": -37.7749634
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Northcote ",
+            "lon": 144.995285,
+            "suburb": "Northcote",
+            "transport_type": "train",
+            "stop_id": 1147,
+            "lat": -37.7698631
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Ivanhoe ",
+            "lon": 145.045425,
+            "suburb": "Ivanhoe",
+            "transport_type": "train",
+            "stop_id": 1101,
+            "lat": -37.768898
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Brunswick ",
+            "lon": 144.9596,
+            "suburb": "Brunswick",
+            "transport_type": "train",
+            "stop_id": 1029,
+            "lat": -37.76772
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Moonee Ponds ",
+            "lon": 144.919159,
+            "suburb": "Moonee Ponds",
+            "transport_type": "train",
+            "stop_id": 1131,
+            "lat": -37.7657051
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Croxton ",
+            "lon": 144.997055,
+            "suburb": "Northcote",
+            "transport_type": "train",
+            "stop_id": 1047,
+            "lat": -37.7641
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Eaglemont ",
+            "lon": 145.05394,
+            "suburb": "Eaglemont",
+            "transport_type": "train",
+            "stop_id": 1056,
+            "lat": -37.7635841
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Anstey ",
+            "lon": 144.9607,
+            "suburb": "Brunswick",
+            "transport_type": "train",
+            "stop_id": 1006,
+            "lat": -37.76124
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Ginifer ",
+            "lon": 144.80957,
+            "suburb": "St Albans",
+            "transport_type": "train",
+            "stop_id": 1076,
+            "lat": -37.7575073
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Heidelberg ",
+            "lon": 145.060684,
+            "suburb": "Heidelberg",
+            "transport_type": "train",
+            "stop_id": 1093,
+            "lat": -37.7570763
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Essendon ",
+            "lon": 144.9162,
+            "suburb": "Essendon",
+            "transport_type": "train",
+            "stop_id": 1064,
+            "lat": -37.75601
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Thornbury ",
+            "lon": 144.998581,
+            "suburb": "Thornbury",
+            "transport_type": "train",
+            "stop_id": 1193,
+            "lat": -37.7550468
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Moreland ",
+            "lon": 144.961823,
+            "suburb": "Coburg",
+            "transport_type": "train",
+            "stop_id": 1135,
+            "lat": -37.7544823
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Glenbervie ",
+            "lon": 144.920944,
+            "suburb": "Essendon",
+            "transport_type": "train",
+            "stop_id": 1079,
+            "lat": -37.7472153
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Bell ",
+            "lon": 145.000153,
+            "suburb": "Preston",
+            "transport_type": "train",
+            "stop_id": 1019,
+            "lat": -37.7455673
+        },
+        {
+            "distance": 0.0,
+            "location_name": "St Albans ",
+            "lon": 144.800049,
+            "suburb": "St Albans",
+            "transport_type": "train",
+            "stop_id": 1184,
+            "lat": -37.7448578
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Strathmore ",
+            "lon": 144.927322,
+            "suburb": "Essendon",
+            "transport_type": "train",
+            "stop_id": 1186,
+            "lat": -37.74359
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Rosanna ",
+            "lon": 145.066147,
+            "suburb": "Rosanna",
+            "transport_type": "train",
+            "stop_id": 1168,
+            "lat": -37.7428741
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Coburg ",
+            "lon": 144.963348,
+            "suburb": "Coburg",
+            "transport_type": "train",
+            "stop_id": 1042,
+            "lat": -37.74234
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Preston ",
+            "lon": 145.000534,
+            "suburb": "Preston",
+            "transport_type": "train",
+            "stop_id": 1159,
+            "lat": -37.7386742
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Batman ",
+            "lon": 144.96283,
+            "suburb": "Coburg North",
+            "transport_type": "train",
+            "stop_id": 1014,
+            "lat": -37.7335243
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Pascoe Vale ",
+            "lon": 144.928192,
+            "suburb": "Pascoe Vale",
+            "transport_type": "train",
+            "stop_id": 1156,
+            "lat": -37.7307549
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Keilor Plains ",
+            "lon": 144.793732,
+            "suburb": "St Albans",
+            "transport_type": "train",
+            "stop_id": 1107,
+            "lat": -37.7292747
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Regent ",
+            "lon": 145.002777,
+            "suburb": "Reservoir",
+            "transport_type": "train",
+            "stop_id": 1160,
+            "lat": -37.7284
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Macleod ",
+            "lon": 145.069153,
+            "suburb": "Macleod",
+            "transport_type": "train",
+            "stop_id": 1117,
+            "lat": -37.72601
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Merlynston ",
+            "lon": 144.961319,
+            "suburb": "Coburg North",
+            "transport_type": "train",
+            "stop_id": 1124,
+            "lat": -37.7209358
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Oak Park ",
+            "lon": 144.921509,
+            "suburb": "Oak Park",
+            "transport_type": "train",
+            "stop_id": 1149,
+            "lat": -37.71795
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Reservoir ",
+            "lon": 145.006989,
+            "suburb": "Reservoir",
+            "transport_type": "train",
+            "stop_id": 1161,
+            "lat": -37.71689
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Fawkner ",
+            "lon": 144.960556,
+            "suburb": "Fawkner",
+            "transport_type": "train",
+            "stop_id": 1066,
+            "lat": -37.7146225
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Ruthven ",
+            "lon": 145.009521,
+            "suburb": "Reservoir",
+            "transport_type": "train",
+            "stop_id": 1171,
+            "lat": -37.7078972
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Glenroy ",
+            "lon": 144.917221,
+            "suburb": "Glenroy",
+            "transport_type": "train",
+            "stop_id": 1082,
+            "lat": -37.7045326
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Watergardens ",
+            "lon": 144.774185,
+            "suburb": "Sydenham",
+            "transport_type": "train",
+            "stop_id": 1202,
+            "lat": -37.7011261
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Gowrie ",
+            "lon": 144.958878,
+            "suburb": "Glenroy",
+            "transport_type": "train",
+            "stop_id": 1083,
+            "lat": -37.700676
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Jacana ",
+            "lon": 144.915848,
+            "suburb": "Glenroy",
+            "transport_type": "train",
+            "stop_id": 1102,
+            "lat": -37.6951332
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Keon Park ",
+            "lon": 145.011887,
+            "suburb": "Thomastown",
+            "transport_type": "train",
+            "stop_id": 1109,
+            "lat": -37.6948662
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Broadmeadows ",
+            "lon": 144.919617,
+            "suburb": "Broadmeadows",
+            "transport_type": "train",
+            "stop_id": 1028,
+            "lat": -37.6830521
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Thomastown ",
+            "lon": 145.014282,
+            "suburb": "Thomastown",
+            "transport_type": "train",
+            "stop_id": 1192,
+            "lat": -37.680336
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Upfield ",
+            "lon": 144.946747,
+            "suburb": "Coolaroo",
+            "transport_type": "train",
+            "stop_id": 1198,
+            "lat": -37.6660767
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Lalor ",
+            "lon": 145.0172,
+            "suburb": "Lalor",
+            "transport_type": "train",
+            "stop_id": 1112,
+            "lat": -37.66585
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Coolaroo ",
+            "lon": 144.926056,
+            "suburb": "Coolaroo",
+            "transport_type": "train",
+            "stop_id": 1221,
+            "lat": -37.661
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Epping ",
+            "lon": 145.030121,
+            "suburb": "Epping",
+            "transport_type": "train",
+            "stop_id": 1063,
+            "lat": -37.65239
+        },
+        {
+            "distance": 0.0,
+            "location_name": "South Morang ",
+            "lon": 145.067032,
+            "suburb": "South Morang",
+            "transport_type": "train",
+            "stop_id": 1224,
+            "lat": -37.6491623
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Roxburgh Park ",
+            "lon": 144.93541,
+            "suburb": "Roxburgh Park",
+            "transport_type": "train",
+            "stop_id": 1219,
+            "lat": -37.6382332
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Diggers Rest ",
+            "lon": 144.719925,
+            "suburb": "Diggers Rest",
+            "transport_type": "train",
+            "stop_id": 1055,
+            "lat": -37.6270142
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Craigieburn ",
+            "lon": 144.943314,
+            "suburb": "Craigieburn",
+            "transport_type": "train",
+            "stop_id": 1044,
+            "lat": -37.6019249
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Sunbury ",
+            "lon": 144.727325,
+            "suburb": "Sunbury",
+            "transport_type": "train",
+            "stop_id": 1187,
+            "lat": -37.57909
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Stony Point ",
+            "lon": 145.221848,
+            "suburb": "Crib Point",
+            "transport_type": "train",
+            "stop_id": 1185,
+            "lat": -38.3742371
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Crib Point ",
+            "lon": 145.204041,
+            "suburb": "Crib Point",
+            "transport_type": "train",
+            "stop_id": 1046,
+            "lat": -38.36612
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Morradoo ",
+            "lon": 145.1896,
+            "suburb": "Crib Point",
+            "transport_type": "train",
+            "stop_id": 1136,
+            "lat": -38.3540344
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Bittern ",
+            "lon": 145.178024,
+            "suburb": "Bittern",
+            "transport_type": "train",
+            "stop_id": 1022,
+            "lat": -38.33739
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Hastings ",
+            "lon": 145.185974,
+            "suburb": "Hastings",
+            "transport_type": "train",
+            "stop_id": 1088,
+            "lat": -38.30566
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Tyabb ",
+            "lon": 145.1864,
+            "suburb": "Tyabb",
+            "transport_type": "train",
+            "stop_id": 1197,
+            "lat": -38.2598152
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Somerville ",
+            "lon": 145.176239,
+            "suburb": "Somerville",
+            "transport_type": "train",
+            "stop_id": 1178,
+            "lat": -38.22534
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Baxter ",
+            "lon": 145.160522,
+            "suburb": "Baxter",
+            "transport_type": "train",
+            "stop_id": 1015,
+            "lat": -38.194046
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Leawarra ",
+            "lon": 145.139542,
+            "suburb": "Frankston",
+            "transport_type": "train",
+            "stop_id": 1114,
+            "lat": -38.1520348
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Frankston ",
+            "lon": 145.12616,
+            "suburb": "Frankston",
+            "transport_type": "train",
+            "stop_id": 1073,
+            "lat": -38.1429863
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Kananook ",
+            "lon": 145.135284,
+            "suburb": "Seaford",
+            "transport_type": "train",
+            "stop_id": 1106,
+            "lat": -38.12174
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Seaford ",
+            "lon": 145.128235,
+            "suburb": "Seaford",
+            "transport_type": "train",
+            "stop_id": 1174,
+            "lat": -38.1040154
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Cranbourne ",
+            "lon": 145.2806,
+            "suburb": "Cranbourne",
+            "transport_type": "train",
+            "stop_id": 1045,
+            "lat": -38.09954
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Pakenham ",
+            "lon": 145.486374,
+            "suburb": "Pakenham",
+            "transport_type": "train",
+            "stop_id": 1153,
+            "lat": -38.0806122
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Merinda Park ",
+            "lon": 145.2635,
+            "suburb": "Cranbourne North",
+            "transport_type": "train",
+            "stop_id": 1123,
+            "lat": -38.0790024
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Carrum ",
+            "lon": 145.122421,
+            "suburb": "Carrum",
+            "transport_type": "train",
+            "stop_id": 1035,
+            "lat": -38.0748978
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Cardinia Road ",
+            "lon": 145.43779,
+            "suburb": "Pakenham",
+            "transport_type": "train",
+            "stop_id": 1223,
+            "lat": -38.07129
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Officer ",
+            "lon": 145.411,
+            "suburb": "Officer",
+            "transport_type": "train",
+            "stop_id": 1151,
+            "lat": -38.066143
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Bonbeach ",
+            "lon": 145.119675,
+            "suburb": "Bonbeach",
+            "transport_type": "train",
+            "stop_id": 1024,
+            "lat": -38.0629463
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Lynbrook ",
+            "lon": 145.249283,
+            "suburb": "Lynbrook",
+            "transport_type": "train",
+            "stop_id": 1222,
+            "lat": -38.0573463
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Chelsea ",
+            "lon": 145.116043,
+            "suburb": "Chelsea",
+            "transport_type": "train",
+            "stop_id": 1038,
+            "lat": -38.05196
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Beaconsfield ",
+            "lon": 145.366074,
+            "suburb": "Beaconsfield",
+            "transport_type": "train",
+            "stop_id": 1017,
+            "lat": -38.050827
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Berwick ",
+            "lon": 145.345718,
+            "suburb": "Berwick",
+            "transport_type": "train",
+            "stop_id": 1021,
+            "lat": -38.04041
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Edithvale ",
+            "lon": 145.108536,
+            "suburb": "Edithvale",
+            "transport_type": "train",
+            "stop_id": 1060,
+            "lat": -38.0380554
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Narre Warren ",
+            "lon": 145.30397,
+            "suburb": "Narre Warren",
+            "transport_type": "train",
+            "stop_id": 1139,
+            "lat": -38.02781
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Aspendale ",
+            "lon": 145.102158,
+            "suburb": "Aspendale",
+            "transport_type": "train",
+            "stop_id": 1011,
+            "lat": -38.02722
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Hallam ",
+            "lon": 145.269775,
+            "suburb": "Hallam",
+            "transport_type": "train",
+            "stop_id": 1085,
+            "lat": -38.0177422
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Mordialloc ",
+            "lon": 145.087662,
+            "suburb": "Mordialloc",
+            "transport_type": "train",
+            "stop_id": 1134,
+            "lat": -38.006588
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Parkdale ",
+            "lon": 145.076324,
+            "suburb": "Parkdale",
+            "transport_type": "train",
+            "stop_id": 1154,
+            "lat": -37.9930763
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Dandenong ",
+            "lon": 145.209732,
+            "suburb": "Dandenong",
+            "transport_type": "train",
+            "stop_id": 1049,
+            "lat": -37.9899673
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Yarraman ",
+            "lon": 145.1916,
+            "suburb": "Noble Park",
+            "transport_type": "train",
+            "stop_id": 1215,
+            "lat": -37.9782524
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Noble Park ",
+            "lon": 145.176941,
+            "suburb": "Noble Park",
+            "transport_type": "train",
+            "stop_id": 1142,
+            "lat": -37.9672356
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Sandown Park ",
+            "lon": 145.162827,
+            "suburb": "Springvale",
+            "transport_type": "train",
+            "stop_id": 1172,
+            "lat": -37.9565
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Springvale ",
+            "lon": 145.153458,
+            "suburb": "Springvale",
+            "transport_type": "train",
+            "stop_id": 1183,
+            "lat": -37.9495125
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Westall ",
+            "lon": 145.13884,
+            "suburb": "Clayton South",
+            "transport_type": "train",
+            "stop_id": 1208,
+            "lat": -37.93849
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Clayton ",
+            "lon": 145.120682,
+            "suburb": "Clayton",
+            "transport_type": "train",
+            "stop_id": 1040,
+            "lat": -37.9251671
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Huntingdale ",
+            "lon": 145.102371,
+            "suburb": "Oakleigh",
+            "transport_type": "train",
+            "stop_id": 1099,
+            "lat": -37.91102
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Belgrave ",
+            "lon": 145.355286,
+            "suburb": "Belgrave",
+            "transport_type": "train",
+            "stop_id": 1018,
+            "lat": -37.9091
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Tecoma ",
+            "lon": 145.343,
+            "suburb": "Tecoma",
+            "transport_type": "train",
+            "stop_id": 1191,
+            "lat": -37.9081154
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Upwey ",
+            "lon": 145.331329,
+            "suburb": "Upwey",
+            "transport_type": "train",
+            "stop_id": 1200,
+            "lat": -37.90369
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Oakleigh ",
+            "lon": 145.088318,
+            "suburb": "Oakleigh",
+            "transport_type": "train",
+            "stop_id": 1150,
+            "lat": -37.9003677
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Hughesdale ",
+            "lon": 145.077637,
+            "suburb": "Hughesdale",
+            "transport_type": "train",
+            "stop_id": 1098,
+            "lat": -37.89488
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Upper Ferntree Gully ",
+            "lon": 145.307526,
+            "suburb": "Upper Ferntree Gully",
+            "transport_type": "train",
+            "stop_id": 1199,
+            "lat": -37.8926735
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Ferntree Gully ",
+            "lon": 145.295258,
+            "suburb": "Ferntree Gully",
+            "transport_type": "train",
+            "stop_id": 1067,
+            "lat": -37.8817
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Glen Waverley ",
+            "lon": 145.162064,
+            "suburb": "Glen Waverley",
+            "transport_type": "train",
+            "stop_id": 1078,
+            "lat": -37.8795
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Syndal ",
+            "lon": 145.14978,
+            "suburb": "Glen Waverley",
+            "transport_type": "train",
+            "stop_id": 1190,
+            "lat": -37.87623
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Mount Waverley ",
+            "lon": 145.128052,
+            "suburb": "Mount Waverley",
+            "transport_type": "train",
+            "stop_id": 1137,
+            "lat": -37.87525
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Holmesglen ",
+            "lon": 145.090652,
+            "suburb": "Malvern East",
+            "transport_type": "train",
+            "stop_id": 1096,
+            "lat": -37.8744
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Jordanville ",
+            "lon": 145.112091,
+            "suburb": "Mount Waverley",
+            "transport_type": "train",
+            "stop_id": 1105,
+            "lat": -37.8736
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Alamein ",
+            "lon": 145.079666,
+            "suburb": "Ashburton",
+            "transport_type": "train",
+            "stop_id": 1002,
+            "lat": -37.8683167
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Ashburton ",
+            "lon": 145.081345,
+            "suburb": "Ashburton",
+            "transport_type": "train",
+            "stop_id": 1010,
+            "lat": -37.86197
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Boronia ",
+            "lon": 145.284378,
+            "suburb": "Boronia",
+            "transport_type": "train",
+            "stop_id": 1025,
+            "lat": -37.8604546
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Burwood ",
+            "lon": 145.0805,
+            "suburb": "Glen Iris",
+            "transport_type": "train",
+            "stop_id": 1031,
+            "lat": -37.8515625
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Hartwell ",
+            "lon": 145.075562,
+            "suburb": "Camberwell",
+            "transport_type": "train",
+            "stop_id": 1087,
+            "lat": -37.8439827
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Bayswater ",
+            "lon": 145.268143,
+            "suburb": "Bayswater",
+            "transport_type": "train",
+            "stop_id": 1016,
+            "lat": -37.84173
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Willison ",
+            "lon": 145.0703,
+            "suburb": "Camberwell",
+            "transport_type": "train",
+            "stop_id": 1213,
+            "lat": -37.8357124
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Riversdale ",
+            "lon": 145.069641,
+            "suburb": "Camberwell",
+            "transport_type": "train",
+            "stop_id": 1166,
+            "lat": -37.8315
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Heathmont ",
+            "lon": 145.244553,
+            "suburb": "Heathmont",
+            "transport_type": "train",
+            "stop_id": 1092,
+            "lat": -37.82832
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Canterbury ",
+            "lon": 145.081223,
+            "suburb": "Canterbury",
+            "transport_type": "train",
+            "stop_id": 1033,
+            "lat": -37.82449
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Chatham ",
+            "lon": 145.088654,
+            "suburb": "Surrey Hills",
+            "transport_type": "train",
+            "stop_id": 1037,
+            "lat": -37.8243027
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Surrey Hills ",
+            "lon": 145.098785,
+            "suburb": "Surrey Hills",
+            "transport_type": "train",
+            "stop_id": 1189,
+            "lat": -37.8241425
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Laburnum ",
+            "lon": 145.1407,
+            "suburb": "Blackburn",
+            "transport_type": "train",
+            "stop_id": 1111,
+            "lat": -37.8207779
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Nunawading ",
+            "lon": 145.1749,
+            "suburb": "Nunawading",
+            "transport_type": "train",
+            "stop_id": 1148,
+            "lat": -37.8206
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Blackburn ",
+            "lon": 145.150009,
+            "suburb": "Blackburn",
+            "transport_type": "train",
+            "stop_id": 1023,
+            "lat": -37.82007
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Mont Albert ",
+            "lon": 145.10553,
+            "suburb": "Mont Albert",
+            "transport_type": "train",
+            "stop_id": 1129,
+            "lat": -37.8194275
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Box Hill ",
+            "lon": 145.121429,
+            "suburb": "Box Hill",
+            "transport_type": "train",
+            "stop_id": 1026,
+            "lat": -37.8192177
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Heatherdale ",
+            "lon": 145.212784,
+            "suburb": "Mitcham",
+            "transport_type": "train",
+            "stop_id": 1091,
+            "lat": -37.8188972
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Mitcham ",
+            "lon": 145.191971,
+            "suburb": "Mitcham",
+            "transport_type": "train",
+            "stop_id": 1128,
+            "lat": -37.8180122
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Ringwood ",
+            "lon": 145.228973,
+            "suburb": "Ringwood",
+            "transport_type": "train",
+            "stop_id": 1163,
+            "lat": -37.81589
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Ringwood East ",
+            "lon": 145.2502,
+            "suburb": "Ringwood East",
+            "transport_type": "train",
+            "stop_id": 1164,
+            "lat": -37.81197
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Croydon ",
+            "lon": 145.2806,
+            "suburb": "Croydon",
+            "transport_type": "train",
+            "stop_id": 1048,
+            "lat": -37.79544
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Mooroolbark ",
+            "lon": 145.312408,
+            "suburb": "Mooroolbark",
+            "transport_type": "train",
+            "stop_id": 1133,
+            "lat": -37.7847481
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Lilydale ",
+            "lon": 145.347717,
+            "suburb": "Lilydale",
+            "transport_type": "train",
+            "stop_id": 1115,
+            "lat": -37.7555161
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Montmorency ",
+            "lon": 145.1215,
+            "suburb": "Montmorency",
+            "transport_type": "train",
+            "stop_id": 1130,
+            "lat": -37.7152977
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Eltham ",
+            "lon": 145.147827,
+            "suburb": "Eltham",
+            "transport_type": "train",
+            "stop_id": 1062,
+            "lat": -37.71355
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Watsonia ",
+            "lon": 145.0838,
+            "suburb": "Watsonia",
+            "transport_type": "train",
+            "stop_id": 1203,
+            "lat": -37.7109528
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Greensborough ",
+            "lon": 145.108246,
+            "suburb": "Greensborough",
+            "transport_type": "train",
+            "stop_id": 1084,
+            "lat": -37.70395
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Diamond Creek ",
+            "lon": 145.158508,
+            "suburb": "Diamond Creek",
+            "transport_type": "train",
+            "stop_id": 1054,
+            "lat": -37.6732941
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Wattle Glen ",
+            "lon": 145.181625,
+            "suburb": "Wattle Glen",
+            "transport_type": "train",
+            "stop_id": 1204,
+            "lat": -37.6639671
+        },
+        {
+            "distance": 0.0,
+            "location_name": "Hurstbridge ",
+            "lon": 145.192017,
+            "suburb": "Hurstbridge",
+            "transport_type": "train",
+            "stop_id": 1100,
+            "lat": -37.6394
+        }
+    ],
+    "weightedLong": 145.044937,
+    "weightedLat": -37.8550529,
+    "maxLong": 145.486374,
+    "minLat": -38.3742371,
+    "maxLat": -37.57909,
+    "clusters": []
+}
