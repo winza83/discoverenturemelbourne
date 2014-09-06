@@ -27,6 +27,8 @@ print """
 		var markers = [];
 		var infowin;
 		var stname = [];
+		var loc = [];
+
 		function initialize() {
 			infowin = null;
 			var myOptions = {
@@ -39,17 +41,23 @@ print """
 		}
 
 		function getStations() {
-			var lineid = document.getElementsByTagName('option')[document.getElementById("trainline").selectedIndex].value;
-			var xmlhttp = new XMLHttpRequest();
-			var addr = 'http://124.190.54.81/event/functions/test.py?trainline=' + lineid;
-			xmlhttp.open('GET',addr, true);
-			xmlhttp.send();
-			xmlhttp.onreadystatechange=function() {
-				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-					document.getElementById('reqstr').value = xmlhttp.response;
+			//var lineid = document.getElementsByTagName('option')[document.getElementById("trainline").selectedIndex].value;
+			if (loc.length != 0) {
+				sendpos = [loc[0].getPosition().lat(), loc[0].getPosition().lng()];
+				var addr = "http://124.190.54.81/event/functions/adaptor.py?meth=stopsNearBy&lat=" + sendpos[0] + "&lng=" +sendpos[1];
+	//			var addr = 'http://124.190.54.81/event/functions/test.py?trainline=' + lineid;
+				var xmlhttp = new XMLHttpRequest();
 
+				xmlhttp.open('GET',addr, true);
+				xmlhttp.send();
+				xmlhttp.onreadystatechange=function() {
+					if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+						document.getElementById('reqstr').value = xmlhttp.response;
+						getData();
+					}
 				}
 			}
+
 		}
 
 		function getData() {
@@ -60,7 +68,7 @@ print """
 			xmlhttp.onreadystatechange=function() {
 				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 					document.getElementById('data').value = xmlhttp.response;
-
+					displayOnMap();
 				}
 			}
 		}
@@ -70,12 +78,14 @@ print """
 			stname = []
 			var data = JSON.parse(document.getElementById('data').value);
 			for (i = 0; i < data.length; i++) {
-				lat = data[i]['lat'];
-				lng = data[i]['lon'];
-				stname.push(data[i]['location_name']);
-				transtype = data[i]['transport_type'];
+				lat = data[i]['result']['lat'];
+				lng = data[i]['result']['lon'];
+				stname.push(data[i]['result']['location_name']);
+				transtype = data[i]['result']['transport_type'];
 				plotMap(transtype, lat, lng, stname[i]);
 			}
+			map[0].setCenter(loc[0].getPosition());
+			map[0].setZoom(13);
 		}
 
 		function clearMap() {
@@ -135,7 +145,7 @@ print """
 		}
 
 		function setLoc() {
-			var loc = [];
+			loc = [];
 			google.maps.event.addListener(map[0], 'click', function(event) {
 				poi = event.latLng;
 				if (typeof(loc[0]) !== "undefined")  {
@@ -143,8 +153,12 @@ print """
 						loc[0].setMap(null);
 				}
 				loc[0] = new google.maps.Marker({position: poi, map: map[0]});
+				map[0].setCenter(poi);
+				map[0].setZoom(16);
 			});
 			}
+
+
 
 		</script>
 		<style>
@@ -161,7 +175,9 @@ print """
 				background-color: #E7CFB4;
 			}
 
-
+			#data, #reqstr {
+				display: none;
+			}
 		</style>
 	</head>
 """
@@ -173,19 +189,12 @@ print "<div id='mapper'></div>"
 #3. show cafes/restaurants
 lines = stations_lines.getLines()
 print "<form id='lines'>"
-print "<input value='locate me' id='myloc' type='button' onclick='getLoc()' /><br />"
-print "<input value='set location' id='setloc' type='button' onclick='setLoc()' /><br />"
-print "<select id=\"trainline\" onchange=\"getStations();\">"
-for i in lines:
-	print "<option value='" + str(lines[i])+"'>" + i + "</option>"
-print "</select><br />"
+#print "<input value='locate me' id='myloc' type='button' onclick='getLoc()' /><br />"
+print "<input value='Set location' id='setloc' type='button' onclick='setLoc()' /><br />"
+print "<input value='Get nearest transport' id='gettrans' type='button' onclick='getStations()' /><br />"
 print "<input id='reqstr' type='text' />"
-print "<input id='getdata' value='get data' type='button' onclick='getData()' /><br />"
-print "<textarea id='data' rows='10'>"
+print "<textarea id='data' rows='1'>"
 print "</textarea>"
-print "<input id='showOnMap' value='show on map' type='button' onclick='displayOnMap();' /><br />"
-
-
 print "</form>"
 
 print "</body>"

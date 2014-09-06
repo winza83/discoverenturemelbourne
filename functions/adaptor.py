@@ -16,9 +16,12 @@ devid = 1000050
 factory = P.Trans(googleKey, key, devid)
 form = cgi.FieldStorage()
 refered = os.environ['REQUEST_URI']
-tid = form.getvalue('trainline')
-method = 'stopsOnLine'
+#tid = form.getvalue('trainline')
+lat = form.getvalue('lat')
+lng = form.getvalue('lng')
+method = form.getvalue('meth')
+#method = 'stopsNearBy'
+
 print "Content-type: text \n"
 
-print factory.delegator(method,[0,tid])
-
+print factory.delegator(method,[lat, lng])

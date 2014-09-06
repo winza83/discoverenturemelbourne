@@ -17,6 +17,10 @@ class Trans(object):
 		request = "/v2/nearme/latitude/" + str(lat) + "/longitude/" + str(lng)
 		return self.getReq(request)
 
+	def HealthCheck(self):
+		request = "/v2/healthcheck"
+		return self.getReq(request)
+
 	def search(self, loc):
 		try:
 			doc = url.urlopen('https://maps.googleapis.com/maps/api/geocode/json?address=' + loc + '%20Victoria%20Australia&key=' + self.googleKey)
