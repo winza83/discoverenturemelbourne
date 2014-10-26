@@ -26,10 +26,13 @@ print """
 		var map = [];
 		var markers = [];
 		var infowin;
+		var poi = '';
+		var linedata = {};
 		var stname = [];
 		var loc = [];
 
 		function initialize() {
+			linedata = {};
 			infowin = null;
 			var myOptions = {
 				center:  new google.maps.LatLng(-37.85, 145.05),
@@ -41,23 +44,24 @@ print """
 		}
 
 		function getStations() {
-			//var lineid = document.getElementsByTagName('option')[document.getElementById("trainline").selectedIndex].value;
+			document.getElementById('route').innerHTML = '';
 			if (loc.length != 0) {
 				sendpos = [loc[0].getPosition().lat(), loc[0].getPosition().lng()];
 				var addr = "http://124.190.54.81/event/functions/adaptor.py?meth=stopsNearBy&lat=" + sendpos[0] + "&lng=" +sendpos[1];
-	//			var addr = 'http://124.190.54.81/event/functions/test.py?trainline=' + lineid;
-				var xmlhttp = new XMLHttpRequest();
+				getRequest(addr);
+			}
+		}
 
-				xmlhttp.open('GET',addr, true);
-				xmlhttp.send();
-				xmlhttp.onreadystatechange=function() {
-					if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-						document.getElementById('reqstr').value = xmlhttp.response;
-						getData();
-					}
+		function getRequest(addr) {
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.open('GET',addr, true);
+			xmlhttp.send();
+			xmlhttp.onreadystatechange=function() {
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					document.getElementById('reqstr').value = xmlhttp.response;
+					getData();
 				}
 			}
-
 		}
 
 		function getData() {
@@ -67,8 +71,24 @@ print """
 			xmlhttp.send();
 			xmlhttp.onreadystatechange=function() {
 				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-					document.getElementById('data').value = xmlhttp.response;
-					displayOnMap();
+					if ((document.getElementById('reqstr').value).match('nearme')) {
+						document.getElementById('data').value = xmlhttp.response;
+						displayOnMap();
+					}
+					else if (document.getElementById('reqstr').value.match('destination')) {
+						data = JSON.parse(xmlhttp.response);
+						for (i = 0; i < data['values'].length; i++) {
+							linenum = data['values'][i]['platform']['direction']['line']['line_number']
+							ttype = data['values'][i]['platform']['direction']['line']['transport_type']
+							linenumtype = linenum + "|" + ttype;
+							if (linenum in linedata == false) {
+								linedata[linenum] = data['values'][i]['platform']['direction']['line']['line_name'];
+								document.getElementById('route').innerHTML += "<input type='checkbox' id='" + linenumtype
+								 +"' value='' />" + ttype + "-" + linedata[linenum] + "<br />";
+							}
+						}
+						xmlhttp.response = '';
+					}
 				}
 			}
 		}
@@ -76,14 +96,16 @@ print """
 		function displayOnMap() {
 			initialize();
 			stname = []
-			var data = JSON.parse(document.getElementById('data').value);
+			data = JSON.parse(document.getElementById('data').value);
 			for (i = 0; i < data.length; i++) {
 				lat = data[i]['result']['lat'];
 				lng = data[i]['result']['lon'];
 				stname.push(data[i]['result']['location_name']);
 				transtype = data[i]['result']['transport_type'];
-				plotMap(transtype, lat, lng, stname[i]);
+				stopid = data[i]['result']['stop_id'];
+				plotMap(transtype, lat, lng, stname[i], stopid);
 			}
+
 			map[0].setCenter(loc[0].getPosition());
 			map[0].setZoom(13);
 		}
@@ -92,7 +114,8 @@ print """
 			map[0] = new google.maps.Map(document.getElementById("mapper"), myOptions);
 		}
 
-		function plotMap(transtype, lat, lng, name) {
+		function plotMap(transtype, lat, lng, name, stopid) {
+			loc[0] = new google.maps.Marker({position: poi, map: map[0]});
 			icon = '';
 
 			if (transtype == "nightrider" || transtype == "bus") {
@@ -126,10 +149,14 @@ print """
 			if (infowin != null) {
 				infowin.close();
 			}
-			infowin = new google.maps.InfoWindow({content: name});
+
+			contentStr = '<div id="info">' + name + '</div>';
+			infowin = new google.maps.InfoWindow({content: contentStr});
 			infowin.setPosition(event.latLng);
 				infowin.open(map[0], this);
+				getRequest("http://124.190.54.81/event/functions/adaptor.py?meth=BND&mode=" + transtype + "&stopid=" + stopid);
 			});
+
 		}
 
 		function getLoc() {
@@ -163,7 +190,7 @@ print """
 		</script>
 		<style>
 			#mapper {
-				width: 60%;
+				width: 70%;
 				height: 500px;
 				float: right;
 			}
@@ -173,10 +200,21 @@ print """
 			#reqstr, #data {
 				width: 400px;
 				background-color: #E7CFB4;
+				display: none;
 			}
 
-			#data, #reqstr {
-				display: none;
+			#data {
+				height: 100px;
+			}
+
+			#route {
+				color: white;
+				float: left;
+			}
+
+			#info {
+				height: 100px;
+				display: block;
 			}
 		</style>
 	</head>
@@ -195,7 +233,9 @@ print "<input value='Get nearest transport' id='gettrans' type='button' onclick=
 print "<input id='reqstr' type='text' />"
 print "<textarea id='data' rows='1'>"
 print "</textarea>"
+print "<input id='status'  />"
 print "</form>"
+print "<ul id='route'></ul>"
 
 print "</body>"
 print "</html>"
