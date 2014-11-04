@@ -64,6 +64,26 @@ print """
 			}
 		}
 
+		function showRoute() {
+			allinput = document.getElementsByTagName('input');
+			for (i = 0; i < allinput.length; i++) {
+				if (allinput[i].type == 'checkbox') {
+						initialize();
+						loc[0] = new google.maps.Marker({position: poi, map: map[0]});
+						if (allinput[i].checked == true) {
+							lineid = allinput[i].value.split("|")[0];
+							mode = allinput[i].value.split("|")[1];
+							var addr = "http://124.190.54.81/event/functions/adaptor.py?meth=stopsOnLine&mode=" + mode + "&lineid=" +lineid;
+							getRequest(addr);
+						}
+					}
+			}
+			//
+			//	alert(linenum);
+			//}
+
+		}
+
 		function getData() {
 			var addr = document.getElementById('reqstr').value;
 			var xmlhttp = new XMLHttpRequest();
@@ -71,23 +91,28 @@ print """
 			xmlhttp.send();
 			xmlhttp.onreadystatechange=function() {
 				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-					if ((document.getElementById('reqstr').value).match('nearme')) {
+					if ((document.getElementById('reqstr').value).match('nearme')
+					|| (document.getElementById('reqstr').value).match('stops-for-line')) {
 						document.getElementById('data').value = xmlhttp.response;
 						displayOnMap();
 					}
 					else if (document.getElementById('reqstr').value.match('destination')) {
 						data = JSON.parse(xmlhttp.response);
 						for (i = 0; i < data['values'].length; i++) {
-							linenum = data['values'][i]['platform']['direction']['line']['line_number']
-							ttype = data['values'][i]['platform']['direction']['line']['transport_type']
+							linenum = data['values'][i]['platform']['direction']['line']['line_number'];
+							lineid = data['values'][i]['platform']['direction']['line']['line_id'];
+							ttype = data['values'][i]['platform']['direction']['line']['transport_type'];
 							linenumtype = linenum + "|" + ttype;
 							if (linenum in linedata == false) {
 								linedata[linenum] = data['values'][i]['platform']['direction']['line']['line_name'];
-								document.getElementById('route').innerHTML += "<input type='checkbox' id='" + linenumtype
-								 +"' value='' />" + ttype + "-" + linedata[linenum] + "<br />";
+								document.getElementById('route').innerHTML += "<input type='checkbox' id='" + linenum
+								 + "' value = '" + lineid + "|" + ttype + "'/>" + ttype + "-" + linedata[linenum] + "<br />";
 							}
 						}
 						xmlhttp.response = '';
+					}
+					else {
+						data = JSON.parse(xmlhttp.response);
 					}
 				}
 			}
@@ -97,21 +122,24 @@ print """
 			initialize();
 			stname = []
 			data = JSON.parse(document.getElementById('data').value);
+			if (document.getElementById('reqstr').value.search('nearme') > 0) {
+				dataone = [];
+				for (i = 0; i < data.length; i++) {
+					dataone[i] = data[i]['result'];
+				}
+				data = dataone;
+			}
 			for (i = 0; i < data.length; i++) {
-				lat = data[i]['result']['lat'];
-				lng = data[i]['result']['lon'];
-				stname.push(data[i]['result']['location_name']);
-				transtype = data[i]['result']['transport_type'];
-				stopid = data[i]['result']['stop_id'];
+				lat = data[i]['lat'];
+				lng = data[i]['lon'];
+				stname.push(data[i]['location_name']);
+				transtype = data[i]['transport_type'];
+				stopid = data[i]['stop_id'];
 				plotMap(transtype, lat, lng, stname[i], stopid);
 			}
 
 			map[0].setCenter(loc[0].getPosition());
 			map[0].setZoom(13);
-		}
-
-		function clearMap() {
-			map[0] = new google.maps.Map(document.getElementById("mapper"), myOptions);
 		}
 
 		function plotMap(transtype, lat, lng, name, stopid) {
@@ -153,7 +181,7 @@ print """
 			contentStr = '<div id="info">' + name + '</div>';
 			infowin = new google.maps.InfoWindow({content: contentStr});
 			infowin.setPosition(event.latLng);
-				infowin.open(map[0], this);
+				//infowin.open(map[0], this);
 				getRequest("http://124.190.54.81/event/functions/adaptor.py?meth=BND&mode=" + transtype + "&stopid=" + stopid);
 			});
 
@@ -198,7 +226,7 @@ print """
 				background-color: #000000;
 			}
 			#reqstr, #data {
-				width: 400px;
+				width: 300px;
 				background-color: #E7CFB4;
 				display: none;
 			}
@@ -210,12 +238,10 @@ print """
 			#route {
 				color: white;
 				float: left;
+				width: 150px;
 			}
 
-			#info {
-				height: 100px;
-				display: block;
-			}
+
 		</style>
 	</head>
 """
@@ -230,12 +256,11 @@ print "<form id='lines'>"
 #print "<input value='locate me' id='myloc' type='button' onclick='getLoc()' /><br />"
 print "<input value='Set location' id='setloc' type='button' onclick='setLoc()' /><br />"
 print "<input value='Get nearest transport' id='gettrans' type='button' onclick='getStations()' /><br />"
+print "<input type='button' value='getRoute' onclick='showRoute()'>"
 print "<input id='reqstr' type='text' />"
 print "<textarea id='data' rows='1'>"
 print "</textarea>"
-print "<input id='status'  />"
 print "</form>"
-print "<ul id='route'></ul>"
-
+print "<ul id='route'></ul><br />"
 print "</body>"
 print "</html>"
