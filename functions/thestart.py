@@ -58,13 +58,37 @@ print """
 			xmlhttp.send();
 			xmlhttp.onreadystatechange=function() {
 				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-					document.getElementById('reqstr').value = xmlhttp.response;
-					getData();
+					if (xmlhttp.response.match('http:')) {
+						document.getElementById('reqstr').value = xmlhttp.response;
+						getData();
+					}
+					else {
+						alert('booo')
+						document.getElementById('data').value = xmlhttp.response;
+						map[0].data.loadGeoJson(document.getElementById('data').value);
+					}
 				}
 			}
 		}
 
-		function showRoute() {
+		function getRoute() {
+			allinput = document.getElementsByTagName('input');
+			for (i = 0; i < allinput.length; i++) {
+				if (allinput[i].type == 'checkbox') {
+						initialize();
+						loc[0] = new google.maps.Marker({position: poi, map: map[0]});
+						if (allinput[i].checked == true) {
+							linenum = allinput[i].value.split("|")[2];
+							mode = allinput[i].value.split("|")[1];
+							var addr = "http://124.190.54.81/event/functions/getlines.py?&mode=" + mode + "&linenum=" +linenum;
+							getRequest(addr);
+
+						}
+					}
+			}
+		}
+
+		function stopsOnRoute() {
 			allinput = document.getElementsByTagName('input');
 			for (i = 0; i < allinput.length; i++) {
 				if (allinput[i].type == 'checkbox') {
@@ -78,9 +102,6 @@ print """
 						}
 					}
 			}
-			//
-			//	alert(linenum);
-			//}
 
 		}
 
@@ -103,16 +124,17 @@ print """
 							lineid = data['values'][i]['platform']['direction']['line']['line_id'];
 							ttype = data['values'][i]['platform']['direction']['line']['transport_type'];
 							linenumtype = linenum + "|" + ttype;
-							if (linenum in linedata == false) {
+							if (!document.getElementById(lineid)) {
 								linedata[linenum] = data['values'][i]['platform']['direction']['line']['line_name'];
-								document.getElementById('route').innerHTML += "<input type='checkbox' id='" + linenum
-								 + "' value = '" + lineid + "|" + ttype + "'/>" + ttype + "-" + linedata[linenum] + "<br />";
+								document.getElementById('route').innerHTML += "<input onchange='clearOthers(" + lineid + ")' type='checkbox' id='" + lineid
+								 + "' value = '" + lineid + "|" + ttype + "|" + linenum + "'/>" + ttype + "-" + linedata[linenum] +
+								 "<br />";
 							}
 						}
 						xmlhttp.response = '';
 					}
 					else {
-						data = JSON.parse(xmlhttp.response);
+//						data = JSON.parse(xmlhttp.response);
 					}
 				}
 			}
@@ -140,6 +162,16 @@ print """
 
 			map[0].setCenter(loc[0].getPosition());
 			map[0].setZoom(13);
+		}
+
+		function clearOthers(checkitem) {
+			items = document.getElementsByTagName('input');
+			for (i = 0; i < items.length; i++) {
+				if (items[i].type ==  'checkbox') {
+					items[i].checked = false;
+				}
+			}
+			document.getElementById(checkitem).checked = true;
 		}
 
 		function plotMap(transtype, lat, lng, name, stopid) {
@@ -181,7 +213,7 @@ print """
 			contentStr = '<div id="info">' + name + '</div>';
 			infowin = new google.maps.InfoWindow({content: contentStr});
 			infowin.setPosition(event.latLng);
-				//infowin.open(map[0], this);
+				infowin.open(map[0], this);
 				getRequest("http://124.190.54.81/event/functions/adaptor.py?meth=BND&mode=" + transtype + "&stopid=" + stopid);
 			});
 
@@ -211,9 +243,7 @@ print """
 				map[0].setCenter(poi);
 				map[0].setZoom(16);
 			});
-			}
-
-
+		}
 
 		</script>
 		<style>
@@ -228,7 +258,7 @@ print """
 			#reqstr, #data {
 				width: 300px;
 				background-color: #E7CFB4;
-				display: none;
+				display: block;
 			}
 
 			#data {
@@ -238,10 +268,14 @@ print """
 			#route {
 				color: white;
 				float: left;
-				width: 150px;
+				width: 240px;
 			}
 
 
+			#info {
+				width: 100px;
+				height: 50px;
+			}
 		</style>
 	</head>
 """
@@ -256,7 +290,8 @@ print "<form id='lines'>"
 #print "<input value='locate me' id='myloc' type='button' onclick='getLoc()' /><br />"
 print "<input value='Set location' id='setloc' type='button' onclick='setLoc()' /><br />"
 print "<input value='Get nearest transport' id='gettrans' type='button' onclick='getStations()' /><br />"
-print "<input type='button' value='getRoute' onclick='showRoute()'>"
+print "<input type='button' value='Stops on Selected Route' onclick='stopsOnRoute()'>"
+print "<input type='button' value='Get Related Route' onclick='getRoute()'>"
 print "<input id='reqstr' type='text' />"
 print "<textarea id='data' rows='1'>"
 print "</textarea>"
