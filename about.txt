@@ -2,3 +2,11 @@ This web application aims to take different datasets from PTV's transport inform
 Hopefully I will be able to use this app to discover new and interesting places along train lines. 
 
 This uses python, html and javascript and the map is based on Google Maps API v3.
+
+notes:
+mashup
+- PTV API
+- foursquare
+- victorian govt event's rss feed
+- eventbrite
+

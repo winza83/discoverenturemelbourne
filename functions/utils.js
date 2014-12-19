@@ -132,6 +132,7 @@ function displayOnMap() {
 		stname.push(data[i]['location_name']);
 		transtype = data[i]['transport_type'];
 		stopid = data[i]['stop_id'];
+		loc[0] = new google.maps.Marker({position: poi, map: map[0]});
 		plotMap(transtype, lat, lng, stname[i], stopid);
 	}
 
@@ -150,7 +151,6 @@ function clearOthers(checkitem) {
 }
 
 function plotMap(transtype, lat, lng, name, stopid) {
-	loc[0] = new google.maps.Marker({position: poi, map: map[0]});
 	icon = '';
 
 	if (transtype == "nightrider" || transtype == "bus") {
@@ -160,6 +160,9 @@ function plotMap(transtype, lat, lng, name, stopid) {
 		icon = 'http://124.190.54.81/MTApp/tram.png';
 	}
 	else if (transtype == "train")  {
+		icon = 'http://124.190.54.81/MTApp/train.png';
+	}
+	else if (transtype == "vline") {
 		icon = 'http://124.190.54.81/MTApp/train.png';
 	}
 	else {
