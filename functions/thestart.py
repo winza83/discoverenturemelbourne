@@ -6,6 +6,7 @@ import cgi
 import cgitb
 import stations_lines as stations_lines
 import os
+import subprocess
 
 googleKey = 'AIzaSyDejfQWInSUrLPFX8iTFQ0fBm62RdKPLNo'
 baseurl = "http://timetableapi.ptv.vic.gov.au"
@@ -13,17 +14,21 @@ key = '29246674-a96c-11e3-8bed-0263a9d0b8a0'
 devid = 1000050
 factory = P.Trans(googleKey, key, devid)
 
-
+host = (subprocess.Popen(['curl', 'ifconfig.me'], stdout = subprocess.PIPE).communicate()[0])
+ip = host.replace("\n","")
 print "Content-type: text/html \n"
 print "<!DOCTYPE html>"
 print """
 	<head>
 		<title>Events and Transport</title>
+		<script type="text/javascript">
+"""
+print "var ip = '" + str(ip) + "';"
+print """</script>
 		<script type="text/javascript" src="../../jquery/jquery-2.0.3.js"></script>
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=drawing"></script>
 		<script type="text/javascript" src="../../jquery/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 		<script type="text/javascript" src="utils.js">
-
 		</script>
 		<style>
 			#mapper {

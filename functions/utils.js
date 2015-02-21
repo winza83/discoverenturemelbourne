@@ -22,7 +22,7 @@ function getStations() {
 	document.getElementById('route').innerHTML = '';
 	if (loc.length != 0) {
 		sendpos = [loc[0].getPosition().lat(), loc[0].getPosition().lng()];
-		var addr = "http://124.190.54.81/event/functions/adaptor.py?meth=stopsNearBy&lat=" + sendpos[0] + "&lng=" +sendpos[1];
+		var addr = "http://" + ip + "/event/functions/adaptor.py?meth=stopsNearBy&lat=" + sendpos[0] + "&lng=" +sendpos[1];
 		getRequest(addr);
 	}
 }
@@ -50,9 +50,9 @@ function getRoute() {
 				if (allinput[i].checked == true) {
 					linenum = allinput[i].value.split("|")[2];
 					mode = allinput[i].value.split("|")[1];
-					var addr = "http://124.190.54.81/event/functions/getlines.py?&mode=" + mode + "&linenum=" +linenum;
+					var addr = "http://" + ip + "/event/functions/getlines.py?&mode=" + mode + "&linenum=" +linenum;
 					if (mode == 'trains') {
-						var addr = "http://124.190.54.81/event/functions/getlines.py?&mode=" + mode + "&linenum='" +linenum + "'";
+						var addr = "http://" + ip + "/event/functions/getlines.py?&mode=" + mode + "&linenum='" +linenum + "'";
 						map[0].data.loadGeoJson(addr);
 					}
 					else {
@@ -72,7 +72,7 @@ function stopsOnRoute() {
 				if (allinput[i].checked == true) {
 					lineid = allinput[i].value.split("|")[0];
 					mode = allinput[i].value.split("|")[1];
-					var addr = "http://124.190.54.81/event/functions/adaptor.py?meth=stopsOnLine&mode=" + mode + "&lineid=" +lineid;
+					var addr = "http://" + ip + "/event/functions/adaptor.py?meth=stopsOnLine&mode=" + mode + "&lineid=" +lineid;
 					getRequest(addr);
 				}
 			}
@@ -154,19 +154,19 @@ function plotMap(transtype, lat, lng, name, stopid) {
 	icon = '';
 
 	if (transtype == "nightrider" || transtype == "bus") {
-		icon = 'http://124.190.54.81/MTApp/bus.png';
+		icon = "http://" + ip + "/MTApp/bus.png";
 	}
 	else if (transtype == "tram") {
-		icon = 'http://124.190.54.81/MTApp/tram.png';
+		icon = "http://" + ip + "/MTApp/tram.png";
 	}
 	else if (transtype == "train")  {
-		icon = 'http://124.190.54.81/MTApp/train.png';
+		icon = "http://" + ip + "/MTApp/train.png";
 	}
 	else if (transtype == "vline") {
-		icon = 'http://124.190.54.81/MTApp/train.png';
+		icon = "http://" + ip + "/MTApp/train.png";
 	}
 	else {
-		icon = 'http://124.190.54.81/MTApp/pt.png';
+		icon = "http://" + ip + "/MTApp/pt.png";
 	}
 
 
@@ -190,7 +190,7 @@ function plotMap(transtype, lat, lng, name, stopid) {
 	infowin.setPosition(event.latLng);
 		infowin.open(map[0], this);
 		if (stopid != null) {
-			getRequest("http://124.190.54.81/event/functions/adaptor.py?meth=BND&mode=" + transtype + "&stopid=" + stopid);
+			getRequest("http://" + ip + "/event/functions/adaptor.py?meth=BND&mode=" + transtype + "&stopid=" + stopid);
 			}
 		});
 
@@ -223,7 +223,7 @@ function setLoc() {
 }
 
 function getEvents() {
-	addr = 'http://124.190.54.81/event/data/output.xml';
+	addr = "http://" + ip + "/event/data/output.xml";
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.open('GET',addr, true);
 	xmlhttp.send();
