@@ -8,10 +8,10 @@ import stations_lines as stations_lines
 import os
 import subprocess
 
-googleKey = 'AIzaSyDejfQWInSUrLPFX8iTFQ0fBm62RdKPLNo'
+googleKey = 'your google key'
 baseurl = "http://timetableapi.ptv.vic.gov.au"
-key = '29246674-a96c-11e3-8bed-0263a9d0b8a0'
-devid = 1000050
+key = 'your ptv api key'
+devid = your ptv dev id
 factory = P.Trans(googleKey, key, devid)
 
 host = (subprocess.Popen(['curl', 'ifconfig.me'], stdout = subprocess.PIPE).communicate()[0])
