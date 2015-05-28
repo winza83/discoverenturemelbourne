@@ -21,6 +21,14 @@ class Trans(object):
 		request = "/v2/healthcheck"
 		return self.getReq(request)
 
+	def Lines(self, mode):
+		request = "/v2/lines/mode/" + str(mode)
+		return self.getReq(request)
+
+	def Disruptions(self, mode):
+		request = "/v2/disruptions/modes/" + str(mode)
+		return self.getReq(request)
+
 	def search(self, loc):
 		try:
 			doc = url.urlopen('https://maps.googleapis.com/maps/api/geocode/json?address=' + loc + '%20Victoria%20Australia&key=' + self.googleKey)
@@ -115,4 +123,10 @@ class Trans(object):
 		elif (method == 'stopsOnLine'):
 			a, b = param
 			reqstr = self.stopsOnLine(a, b)
+		elif (method == 'linesByMode'):
+			a = param[0]
+			reqstr = self.Lines(a)
+		elif (method == 'Disruptions'):
+			a = param[0]
+			reqstr = self.Disruptions(a)
 		return reqstr
